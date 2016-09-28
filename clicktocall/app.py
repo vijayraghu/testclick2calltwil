@@ -48,15 +48,14 @@ def call():
 def outbound():
     response = twiml.Response()
     
-    #response.say("Thank you for contacting our sales department. If this "
-                 #"click to call application was in production, we would "
-                 #"dial out to your sales team with the Dial verb.",
-                 #voice='alice')
+    response.say("Hello Krishna Raman, This is a call from Infosys BGC team to inform you that you have defaulted to submit your work experience records. "
+                 "Please do the needful at the earliest failing which necessary action would be taken. ",
+                  voice='alice')
     
     # Uncomment this code and replace the number with the number you want 
     # your customers to call.
-    with response.dial() as dial:
-        dial.number("+12014307839")
+    #with response.dial() as dial:
+        #dial.number("+12014307839")
     
     return str(response)
 
